@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    background-color: lightgreen;
+}
+.heading{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-left: 5.2rem;
+    font-family: 'Inconsolata', monospace;
+}
+main{
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.image{
+    /* margin-left: auto; */
+
+}
+img{
+    height: 450px;
+    /* margin-left: auto; */
+    margin-left: 50px;
+}
+.info{
+    /* margin-right: auto; */
+    margin-right: 50px;
+}
+.info h1{
+    font-size: 4rem;
+    max-width: 40rem;
+}
+.info p {
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 390px;
+    color: rgba(0, 0, 0, 0.726);
+    margin-top: 25px;
+}
+button{
+    font-size: 14px;
+    text-transform: uppercase;
+    height: 68px;
+    width: 216px;
+    cursor: pointer;
+    border: none;
+    background-color: #333333;
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+button:active{
+    transform: scale(.98);
+}
+.credit{
+    font-size: 14px;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: #535353c4;
+}
+
+
+@media screen and (max-width: 630px) {
+    .heading{
+        font-size: 24px;
+        margin-left: 30px;
+        margin-top: 25px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    main{
+        margin-top: 4rem;
+    }
+    img{
+        height: 238px;
+        margin-left: 0px;
+    }
+    .info h1{
+        font-size: 48px;
+        width: 85%;
+        letter-spacing: -2.5px;
+    }
+    .info p{
+        font-size: 18px;
+        width: 85%;
+    }
+    button{
+        align-self: baseline;
+        margin-left: 7%;
+    }
+    .credit{
+        font-size: 14px;
+        position: absolute;
+        bottom: 15px;
+        margin-bottom: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        color: #535353c4;
+    }
+    }
